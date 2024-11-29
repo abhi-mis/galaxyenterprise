@@ -1,4 +1,4 @@
-import { Package, Truck, Wrench, Clock, Users, ArrowRight, Crane } from 'lucide-react';
+import { Package, Truck, Wrench, Clock, Users, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
 const Services = () => {
@@ -18,6 +18,12 @@ const Services = () => {
       bgColor: 'from-purple-500 to-purple-800',
     },
     {
+      icon: <Wrench className="h-10 w-10" />,
+      title: 'Crane Maintainance & Services',
+      description: 'Round-the-clock customer service and technical support.',
+      bgColor: 'from-cyan-700 to-cyan-500',
+    },
+    {
       icon: <Truck className="h-10 w-10" />,
       title: 'Logistics Solutions',
       description: 'Efficient transportation and delivery services worldwide.',
@@ -29,12 +35,7 @@ const Services = () => {
       description: 'Round-the-clock customer service and technical support.',
       bgColor: 'from-cyan-700 to-cyan-500',
     },
-    {
-      icon: <Crane className="h-10 w-10" />,
-      title: 'Crane Maintainance & Services',
-      description: 'Round-the-clock customer service and technical support.',
-      bgColor: 'from-cyan-700 to-cyan-500',
-    },
+  
     {
       icon: <Clock className="h-10 w-10" />,
       title: '24/7 Support',
@@ -126,7 +127,7 @@ const Services = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Global Network</h3>
               <ul className="space-y-4">
                 {[
-                  'Presence in major ports worldwide',
+                  'Presence in major ports',
                   'Strategic partnerships with suppliers',
                   'Efficient logistics network',
                 ].map((item, index) => (

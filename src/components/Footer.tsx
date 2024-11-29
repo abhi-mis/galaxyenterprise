@@ -54,15 +54,16 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 ">
                 <MapPin className="h-5 w-5 text-blue-400" />
-                <span className="text-black">123 Harbor Street, Port City</span>
+                <span className="text-black"><a href="https://maps.app.goo.gl/T1BFYFaHtCZaUyZGA" target="_blank">20/1, Chetla Hat Road, Alipore, Kolkata - 700027</a></span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-black">+1 234 567 890</span>
+                <span className="text-black">+91 7003952283</span>
+                <span className="text-black">+91 9883174637</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-black">info@galaxyenterprise.com</span>
+                <span className="text-black" ><a href="mailto:galaxyenterprise703@gmail.com" target="_blank">galaxyenterprise703@gmail.com</a></span>
               </li>
             </ul>
           </div>

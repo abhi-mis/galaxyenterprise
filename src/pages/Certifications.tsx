@@ -8,21 +8,26 @@ const Certifications = () => {
     {
       title: 'ISO 9001:2015',
       description: 'Quality Management System Certification',
-      issuer: 'International Organization for Standardization',
-      year: '2023',
+      issuer: 'HawkEye Certifications',
       icon: <Shield className="h-10 w-10" />,
       color: 'from-blue-500 to-blue-600',
     },
     {
-      title: 'Maritime Safety Certification',
-      description: 'International Maritime Safety Standards Compliance',
-      issuer: 'International Maritime Organization',
-      year: '2023',
+      title: 'MSME Certified',
+      description: 'Micro, Small & Medium Enterprises',
+      issuer: 'Government of India',
       icon: <Award className="h-10 w-10" />,
       color: 'from-indigo-500 to-indigo-600',
     },
     {
-      title: 'Environmental Management',
+      title: 'FSSAI Certified',
+      description: 'Food Safety and Standards Authority of India',
+      issuer: 'Government of WestBengal',
+      icon: <CheckCircle className="h-10 w-10" />,
+      color: 'from-purple-500 to-purple-600',
+    },
+    {
+      title: '',
       description: 'ISO 14001:2015 Environmental Management System',
       issuer: 'International Organization for Standardization',
       year: '2022',
@@ -76,7 +81,6 @@ const Certifications = () => {
                   <p className="text-white/90 mb-4">{cert.description}</p>
                   <div className="text-white/80 text-sm">
                     <p>Issued by: {cert.issuer}</p>
-                    <p>Valid until: December {cert.year}</p>
                   </div>
                 </div>
                 <div className="p-6 bg-gradient-to-b from-white to-gray-50">
