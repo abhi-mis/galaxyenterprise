@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Anchor } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
+import logo from './logo.png'; // Adjust the path as necessary
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +23,12 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <motion.div
+              <motion.img
+                src={logo}
+                alt="Galaxy Enterprise Logo"
+                className="h-8 w-8"
                 whileHover={{ rotate: 15 }}
-                className="text-maritime-600 dark:text-maritime-400"
-              >
-                <Anchor className="h-8 w-8" />
-              </motion.div>
+              />
               <span className="text-xl font-bold text-gray-900 dark:text-white">
                 Galaxy Enterprise
               </span>
