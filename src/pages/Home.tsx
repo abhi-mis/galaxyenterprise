@@ -14,7 +14,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Ship, Package, Compass, Wind, Navigation, Anchor as AnchorIcon } from 'lucide-react';
+import { Ship, Package, Wrench, Shield,  Anchor as AnchorIcon } from 'lucide-react';
 
 import image1 from './1.jpg';
 import image2 from './2.jpg';
@@ -41,21 +41,21 @@ const Home = () => {
 
   const features = [
     {
-      icon: Navigation,
-      title: 'Global Navigation',
-      desc: 'Advanced routing and navigation systems for optimal maritime operations',
+      icon: Wrench,
+      title: 'Maintenance Services',
+      desc: 'Professional maintenance and repair services for all types of vessels.',
       color: 'from-emerald-400 to-cyan-500'
     },
     {
-      icon: Wind,
-      title: 'Weather Monitoring',
-      desc: 'Real-time weather tracking and route optimization services',
+      icon: Package,
+      title: 'Ship Parts Supply',
+      desc: 'High-quality marine equipment and spare parts from certified manufacturers.',
       color: 'from-blue-400 to-indigo-500'
     },
     {
-      icon: Compass,
-      title: 'Port Services',
-      desc: 'Comprehensive port management and logistics solutions',
+      icon: Shield,
+      title: 'Crane Maintenance',
+      desc: 'Expert maintenance and repair services for maritime cranes and equipment.',
       color: 'from-purple-400 to-pink-500'
     }
   ];
