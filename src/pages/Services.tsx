@@ -8,7 +8,6 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// Import local images
 import kolkataPort from './port1.jpeg';
 import haldiaPort from './port2.jpeg';
 import paradeepPort from './port3.jpeg';
@@ -18,6 +17,10 @@ import mundraPort from './port6.jpeg';
 import kandlaPort from './port7.jpeg';
 import visakhapatnamPort from './port8.jpeg';
 
+import slider1 from './sliderfrui.jpg';
+import slider3 from './sliderelec.jpg';
+import slider2 from './slidertool.webp';
+import slider5 from './slidersafe.jpg';
 const Services = () => {
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0.8]);
@@ -83,17 +86,17 @@ const Services = () => {
 
   const sliderImages = [
     {
-      url: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf',
+      url: slider1,
       caption: 'Fresh Fruits & Vegetables',
       description: 'Premium quality fresh produce for maritime vessels'
     },
     {
-      url: 'https://images.unsplash.com/photo-1581147036324-c1c88bb6eb4e',
+      url: slider2,
       caption: 'Professional Tools',
       description: 'High-grade repair and maintenance equipment'
     },
     {
-      url: 'https://images.unsplash.com/photo-1558424871-c0cc31dea15d',
+      url: slider3,
       caption: 'Electrical Supplies',
       description: 'Essential electrical components and equipment'
     },
@@ -103,7 +106,7 @@ const Services = () => {
       description: 'Complete range of daily essentials and supplies'
     },
     {
-      url: 'https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8',
+      url: slider5,
       caption: 'Safety Equipment',
       description: 'Maritime safety gear and emergency supplies'
     }
