@@ -21,6 +21,8 @@ import slider1 from './sliderfrui.jpg';
 import slider3 from './sliderelec.jpg';
 import slider2 from './slidertool.webp';
 import slider5 from './slidersafe.jpg';
+import slider6 from './slidership.jpg';
+
 const Services = () => {
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0.8]);
@@ -109,6 +111,11 @@ const Services = () => {
       url: slider5,
       caption: 'Safety Equipment',
       description: 'Maritime safety gear and emergency supplies'
+    },
+    {
+      url: slider6,
+      caption: 'Ship Parts and Equipment',
+      description: 'Essential Ship parts and equipment'
     }
   ];
 

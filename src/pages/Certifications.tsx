@@ -2,7 +2,7 @@ import { Shield, Award, CheckCircle, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
 const Certifications = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [setHoveredIndex] = useState<number | null>(null);
 
   const certifications = [
     {
@@ -27,8 +27,8 @@ const Certifications = () => {
       color: 'from-purple-500 to-purple-600',
     },
     {
-      title: '',
-      description: 'ISO 14001:2015 Environmental Management System',
+      title: 'ISO 14001:2015',
+      description: 'Environmental Management System',
       issuer: 'International Organization for Standardization',
       year: '2022',
       icon: <CheckCircle className="h-10 w-10" />,
@@ -64,7 +64,7 @@ const Certifications = () => {
 
       {/* Certifications Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {certifications.map((cert, index) => (
             <div
               key={index}

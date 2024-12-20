@@ -9,7 +9,7 @@ const About = () => {
   const stats = [
     {
       icon: History,
-      value: '7+',
+      value: '17+',
       label: 'Years Experience',
       color: 'from-blue-600 to-indigo-800',
     },
@@ -162,7 +162,7 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-cyan-100">
               <p>
-                Founded in 2015, Galaxy Enterprise has been at the forefront of maritime solutions for almost a decade. Our commitment to excellence and innovation has made us a trusted partner in the maritime industry.
+                Founded in 2007, Galaxy Enterprise has been at the forefront of maritime solutions for almost a decade. Our commitment to excellence and innovation has made us a trusted partner in the maritime industry.
               </p>
               <p>
                 We specialize in providing high-quality ship supplies, logistics solutions, and technical support to vessels worldwide. Our government certifications and industry recognition speak to our dedication to maintaining the highest standards in maritime services.
@@ -177,7 +177,7 @@ const About = () => {
           >
             <div className="relative rounded-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80"
+                src="./icon.png"
                 alt="Maritime Operations"
                 className="w-full h-[400px] object-cover rounded-2xl"
               />
